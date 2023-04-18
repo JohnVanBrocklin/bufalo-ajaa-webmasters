@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AJAA Masters Website</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Place Holder">
+    <meta name="author" content="AJAA Webmasters">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body onload="GetData()">
+ <header role="banner" class="primary">
+    <nav class="desktop-nav">
+      <div class="brand">
+        <a href="index.html"><img src="assets/img/20230411_160409_0000_adobe_express.png" alt="Logo"></a>
+      </div>
+      <div class="main-nav">
+        <ul class="desktop-nav-list">
+          <li class="desktop-nav-item">
+            <a href="#About" class="desktop-nav-link">About</a>
+          </li>
+          <li class="desktop-nav-item">
+            <a href="#water" class="desktop-nav-link">Water levels</a>
+          </li>
+          <li class="desktop-nav-item">
+            <a href="reservation.html" class="desktop-nav-link">Reservations</a>
+          </li>
+          <li class="desktop-nav-item">
+            <a href="#contact" class="desktop-nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<script src="https://kit.fontawesome.com/202dbdc2e3.js" crossorigin="anonymous"></script>
+  <section id="content" class="video">
+    <video width="100%" height="100%" autoplay="autoplay" loop>
+        <source src="assets/img/BuffaloRiver.mp4" type="video/mp4">
+      </video> 
+  </section>
+  <section id="About" class="Info">
+    <div class="text">
+    <h2>About Us</h2>
+    <p> Welcome to Buffalo River Rentals and Excursions! We are T. Wallace and B. Bauer, two long-time friends and outdoor enthusiasts who want to provide you with everything you need to have one of the best outdoor adventures of your life experiencing nature along the Buffalo National River in Arkansas. Floating the Buffalo has been a beloved pastime in our area for generations and It’s where some of our most cherished memories with our families and friends have been made. The awe-inspiring natural beauty found around the river and the unforgettable moments we've experienced while on excursions throughout this area are the heart and soul of why we started our company.
+
+      Starting out with just 4 canoes, 10 life vests, and a dream - we built our excursion business from the ground up relying on our immense knowledge of our local wilderness and our passion for showing the best parts of it to others.  
+      
+      Today we offer full trip planning with canoe and cabin rentals as well as shuttle buses to and from the river sites. We rent canoes that are made locally and are proud to support other local, authentically Arkansan businesses as well. If you would prefer to buy your own canoe rather than rent ours, so and so canoes are just right up the road from our primary location, tell them T and B sent you!
+      
+      
+      As outdoor guides, excursionists, and all-around nature lovers - we understand our role in preserving the environment for us to enjoy now and for future generations. Our goal is to share our love for the outdoors with others while also doing our part to protect it. Leave no trace.
+      
+      We invite everyone to let us show you around. We are family-friendly and open to all people, of all ages, from everywhere! Please call our office or submit a contact form to discuss disability accommodations, we would love to see how we could assist with any needs you have. We believe nature is for everyone.
+      
+      Over the years we have grown quite a bit and we are expanding our operations to include more exciting outdoor activities including Mountain Biking, Rock Climbing, Hiking, and more. If there’s something you want to do and don’t see listed on our roster currently,  just ask and we will see if it’s something we can help you with.
+      
+      Thank you for considering our company for your outdoor adventures. We look forward to welcoming you to the Buffalo National River and sharing our passion for the outdoors with you.
+      </p>
+<br>
+</div>
+</section>
+  <section id="water" class="levels">
+    <h2>Water Levels</h2>
+    <div class="graph">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Pruitt Water Level
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the current water levels for Pruitt</strong> <canvas id="chartjs-0" class="justify" width="400" height="400"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Boxley Water Level
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the current water levels for Boxley</strong> <canvas id="chartjs-1" class="justify" width="400" height="400"></canvas>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Carver Water Level
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the current water levels for Carver</strong> <canvas id="chartjs-2" class="justify" width="400" height="400"></canvas>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Ponca Water Level
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the current water levels for Ponca</strong> <canvas id="chartjs-3" class="justify" width="400" height="400"></canvas>
+              </div>
+        </div>
+      </div>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+  </section>
+    <aside role="complementary">
+      <div class="detail">
+        <article class="widget">
+          <header>
+            <h2>Map</h2>
+          </header>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3226.7707381237874!2d-93.36705497755904!3d36.02589151819389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzbCsDAxJzMzLjYiTiA5M8KwMjEnNTQuNiJX!5e0!3m2!1sen!2sus!4v1681239498613!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+          <footer>Footer</footer>
+        </article>
+        <article class="widget" id="contact">
+          <header>
+            <h2>Contact</h2>
+          </header>
+          <div id="wufoo-r1u68ldr0hssw9d"> Fill out my <a href="https://alexg342.wufoo.com/forms/r1u68ldr0hssw9d">online form</a>. </div> <script type="text/javascript"> var r1u68ldr0hssw9d; (function(d, t) { var s = d.createElement(t), options = { 'userName':'alexg342', 'formHash':'r1u68ldr0hssw9d', 'autoResize':false, 'height':"450px", 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { r1u68ldr0hssw9d = new WufooForm(); r1u68ldr0hssw9d.initialize(options); r1u68ldr0hssw9d.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+          <footer>Footer</footer>
+        </article>
+      </div>
+    </aside>
+      
+    
+    
+  
+</body>
+</html>
