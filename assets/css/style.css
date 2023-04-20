@@ -19,7 +19,7 @@ body {
 
 /* header css */
 
-header.primary {
+header.primary-1 {
   height: 80px;
   background-color: #6AAED9;
   display: flex;
@@ -29,35 +29,40 @@ header.primary {
 
 /* navbar css */
 
-.desktop-nav {
+.desktop-nav-main-1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 10px;
+  max-width: 1500px;
 }
 
-.desktop-nav-item {
+.desktop-nav-it {
   list-style-type: none;
   display: inline-block;
+  padding-top: 20px;
 }
 
-.desktop-nav-link {
+.desktop-nav-li {
   color: #ffffff;
   text-decoration: none;
   padding: 20px;
   font-size: 20px;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
   transition: all 0.3s ease-in-out;
+  padding-top: 20px;
+
 }
 
-.desktop-nav-link:hover {
+.desktop-nav-li:hover {
   text-shadow: 2px 2px #000000;
   transition: all 0.3s ease-in-out;
 }
 
 .brand img {
-   width: 200px;
+   width: 300px;
+   margin-top: -8px;
    height: auto;
 }
 
@@ -72,7 +77,7 @@ header.primary {
   display: none;
 }
 
-.mobile-link {
+.mobile-li {
   padding: 10px 15px;
   text-decoration: none;
   font-size: 17px;
@@ -269,9 +274,20 @@ aside article.widget footer {
 display: none;
 }
 
-.backtotop{
+.socials {
 text-align:center;
 background: #6AAED9;
+color: white;
+font-size: 20px;
+}
+
+.socials a {
+  color: white;
+}
+
+.phone {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /* river gauge css */
@@ -282,6 +298,38 @@ background: #6AAED9;
   align-items: center;
   flex-direction: column;
 }
+
+/* about css */
+
+.about-jumbo {
+  background-image: url('../img/DSC02499.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
+.about-jumbo h1 {
+  font-size: 100px;
+}
+
+.about-cont {
+  margin: 0 auto;
+  max-width: 1000px;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  line-height: 40px;
+}
+
+.about-p-btm {
+  padding-top: 30px;
+}
+
 
 /*  media css */
 
@@ -325,15 +373,17 @@ background: #6AAED9;
   #canoe-reserve {
   margin: 0 30px;
 }
-
-.hamburger {
-  display: block;
-}
-
-.main-nav {
-  display: none;
-}
 }   
+
+@media screen and (max-width: 1060px) {
+  .hamburger {
+    display: block;
+  }
+  
+  .main-nav-1 {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 639px) {
   .slider-for,

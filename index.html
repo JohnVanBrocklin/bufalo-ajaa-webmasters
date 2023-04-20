@@ -12,38 +12,42 @@
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body onload="GetData()">
- <header role="banner" class="primary">
-    <nav class="desktop-nav">
+ <header role="banner" class="primary-1">
+    <nav class="desktop-nav-main-1">
       <div class="brand">
         <a href="index.html"><img src="assets/img/20230411_160409_0000_adobe_express.png" alt="Logo"></a>
       </div>
-      <div class="main-nav">
-        <ul class="desktop-nav-list">
-          <li class="desktop-nav-item">
-            <a href="#About" class="desktop-nav-link">Home</a>
+      <div class="main-nav-1">
+        <ul class="desktop-nav-lis">
+          <li class="desktop-nav-it">
+            <a href="index.html" class="desktop-nav-li">Home</a>
           </li>
-          <li class="desktop-nav-item">
-            <a href="#About" class="desktop-nav-link">About</a>
+          <li class="desktop-nav-it">
+            <a href="about.html" class="desktop-nav-li">About</a>
           </li>
-          <li class="desktop-nav-item">
-            <a href="#water" class="desktop-nav-link">Water levels</a>
+          <li class="desktop-nav-it">
+            <a href="index.html#water" class="desktop-nav-li">Water Levels</a>
           </li>
-          <li class="desktop-nav-item">
-            <a href="reservation.html" class="desktop-nav-link">Reservations</a>
+          <li class="desktop-nav-it">
+            <a href="reservation.html#cabin" class="desktop-nav-li">Cabin</a>
           </li>
-          <li class="desktop-nav-item">
-            <a href="#contact" class="desktop-nav-link">Contact</a>
+          <li class="desktop-nav-it">
+            <a href="reservation.html#canoe" class="desktop-nav-li">Canoe</a>
+          </li>
+          <li class="desktop-nav-it">
+            <a href="#contact" class="desktop-nav-li">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
     <nav class="mobile-nav">
       <div id="myLinks">
-        <a href="index.html" class="mobile-link">Home</a>
-        <a href="#about" class="mobile-link">About</a>
-        <a href="#water" class="mobile-link">Water Levels</a>
-        <a href="reservation.html" class="mobile-link">Reservations</a>
-        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="index.html" class="mobile-li">Home</a>
+        <a href="about.html" class="mobile-li">About</a>
+        <a href="index.html#water" class="mobile-li">Water Levels</a>
+        <a href="reservation.html#cabin" class="mobile-li">Cabin</a>
+        <a href="reservation.html#canoe" class="mobile-li">Canoe</a>
+        <a href="#contact" class="mobile-li">Contact</a>
       </div>
       <div class="hamburger">
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -54,30 +58,10 @@
   </header>
   <section id="content" class="video">
     <video width="100%" autoplay="autoplay" loop>
-        <source src="assets/img/BuffaloRiver.mp4" type="video/mp4">
+        <source src="assets/img/Welcome_To....mp4" type="video/mp4">
       </video> 
   </section>
-  <section id="About" class="Info">
-    <div class="text">
-    <h2>About Us</h2>
-    <p> Welcome to Buffalo River Rentals and Excursions! We are T. Wallace and B. Bauer, two long-time friends and outdoor enthusiasts who want to provide you with everything you need to have one of the best outdoor adventures of your life experiencing nature along the Buffalo National River in Arkansas. Floating the Buffalo has been a beloved pastime in our area for generations and It’s where some of our most cherished memories with our families and friends have been made. The awe-inspiring natural beauty found around the river and the unforgettable moments we've experienced while on excursions throughout this area are the heart and soul of why we started our company.
 
-      Starting out with just 4 canoes, 10 life vests, and a dream - we built our excursion business from the ground up relying on our immense knowledge of our local wilderness and our passion for showing the best parts of it to others.  
-      
-      Today we offer full trip planning with canoe and cabin rentals as well as shuttle buses to and from the river sites. We rent canoes that are made locally and are proud to support other local, authentically Arkansan businesses as well. If you would prefer to buy your own canoe rather than rent ours, so and so canoes are just right up the road from our primary location, tell them T and B sent you!</p>
-      
-      
-      <p>As outdoor guides, excursionists, and all-around nature lovers - we understand our role in preserving the environment for us to enjoy now and for future generations. Our goal is to share our love for the outdoors with others while also doing our part to protect it. Leave no trace.
-      
-      We invite everyone to let us show you around. We are family-friendly and open to all people, of all ages, from everywhere! Please call our office or submit a contact form to discuss disability accommodations, we would love to see how we could assist with any needs you have. We believe nature is for everyone.
-      
-      Over the years we have grown quite a bit and we are expanding our operations to include more exciting outdoor activities including Mountain Biking, Rock Climbing, Hiking, and more. If there’s something you want to do and don’t see listed on our roster currently,  just ask and we will see if it’s something we can help you with.
-      
-      Thank you for considering our company for your outdoor adventures. We look forward to welcoming you to the Buffalo National River and sharing our passion for the outdoors with you.
-      </p>
-<br>
-</div>
-</section>
   <section id="water" class="levels">
     <h2>Water Levels</h2>
       <div class="accordion" id="accordionExample">
@@ -95,11 +79,11 @@
           </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
               Ponca Water Level
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body justify">
               <canvas id="chartjs-1" width="400" height="400"></canvas>
           </div>
@@ -107,11 +91,11 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
               Pruitt Water Level
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body justify">
               <canvas id="chartjs-2" width="400" height="400"></canvas>
             </div>
@@ -119,11 +103,11 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                 Carver Water Level
               </button>
             </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
               <div class="accordion-body justify">
                 <canvas id="chartjs-3" width="400" height="400"></canvas>
               </div>
@@ -149,7 +133,9 @@
                     </article>
                   </div>
                 </aside>
-                <div class="backtotop"><a href="#top" class="desktop-nav-link">Back to top</a> </div>
+                <div class="social-wrap">
+                  <div class="socials"><p><a href="https://www.google.com/maps/place/36%C2%B001'33.6%22N+93%C2%B021'54.6%22W/@36.0261133,-93.3654997,19.77z/data=!4m5!3m4!1s0x0:0x0!8m2!3d36.026009!4d-93.365169" class="address">Address</a> - <a href="#top" class="desktop-nav-link">Back to top</a> - <span class="phone">Phone</span></p></div>
+                </div>
               </section>
     
     <script src="https://kit.fontawesome.com/202dbdc2e3.js" crossorigin="anonymous"></script>
