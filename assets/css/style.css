@@ -194,76 +194,84 @@ img{
 
 /* content css */
 #content{
-    margin:auto;
-    padding:auto;
-    text-align:center;
+  margin:auto;
+  padding:auto;
+  text-align:center;
+  align-content: center;
+
 }
 
 #About{
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),url('../img/DSC02499.jpg');
-    width: 100%;
-    padding: 0 7%;
-    margin: 0;
-    max-width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height:auto;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ),url('../img/DSC02499.jpg');
+  width: 100%;
+  padding: 0 7%;
+  margin: 0;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:auto;
 }
 
 .text{
-  text-align:center;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 20px;
-  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
-  font-weight:200;
+text-align:center;
+color: #ffffff;
+text-decoration: none;
+font-size: 20px;
+text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+font-weight:200;
 }
 
 
 #water{
-  text-align:center;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 20px;
-  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
-  font-weight:200;
-    margin:auto;
-    padding:auto;
-    text-align:center;
-    height: auto;
-    background-color:#8EE5EF;
-}
-
-/* footer css */
-aside[role="complementary"] {
-  background: #00A3FF;
+text-align:center;
+color: #ffffff;
+text-decoration: none;
+font-size: 20px;
+text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+font-weight:200;
   margin:auto;
   padding:auto;
   text-align:center;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 20px;
-  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
-  font-weight:200;
+  height: auto;
+  background-color:#8EE5EF;
+}
+
+/* footer css */
+
+aside[role="complementary"] {
+background: #6AAED9;
+margin:auto;
+padding:auto;
+text-align:center;
+color: #ffffff;
+text-decoration: none;
+font-size: 20px;
+text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+font-weight:200;
 }
 
 
 aside .detail {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+} */
 
 aside article.widget {
-  width: 100%;
+width: 100%;
 }
 
 aside article.widget footer {
-  display: none;
+display: none;
+}
+
+.backtotop{
+text-align:center;
+background: #6AAED9;
 }
 
 /* river gauge css */
