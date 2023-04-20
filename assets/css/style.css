@@ -24,6 +24,7 @@ header.primary {
   background-color: #6AAED9;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 /* navbar css */
@@ -59,6 +60,34 @@ header.primary {
    width: 200px;
    height: auto;
 }
+
+#myLinks {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  background-color: #6AAED9;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  display: none;
+}
+
+.mobile-link {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  font-size: 20px;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
+
 
 /* cabins css */
 
@@ -104,6 +133,15 @@ header.primary {
     padding-bottom: 30px;
 }
 
+.cabin-header,
+.canoe-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  font-size: 25px;
+}
+
 /* slideshow css */
 
 img{
@@ -136,6 +174,22 @@ img{
 .slick-autoplay-toggle-button:focus 
 {
     color:black;
+}
+
+.ext-link {
+  color: #000000;
+  display: inline-block;
+}
+
+.ext-link:hover {
+  text-decoration: none;
+}
+
+.canoe-tag {
+  text-align: center;
+  font-size: 25px;
+  margin: 20px;
+  padding-bottom: 30px;
 }
 
 /* content css */
@@ -214,9 +268,11 @@ aside article.widget footer {
 
 /* river gauge css */
 
-.accordion-body {
+.justify {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*  media css */
@@ -261,11 +317,25 @@ aside article.widget footer {
   #canoe-reserve {
   margin: 0 30px;
 }
+
+.hamburger {
+  display: block;
+}
+
+.main-nav {
+  display: none;
+}
 }   
 
 @media screen and (max-width: 639px) {
   .slider-for,
   .slider-nav {
     width: 330px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  #myLinks {
+    height: 70px;
   }
 }

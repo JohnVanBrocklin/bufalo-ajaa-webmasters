@@ -1,3 +1,12 @@
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
 // Alternate Configuation Options Here - https://accessible360.github.io/accessible-slick/#demos
 
 $('.slider-for').slick({
@@ -24,7 +33,7 @@ $('.slider-for').slick({
 
   async function GetData() {
     "use strict";
-    var myURL = "https://waterservices.usgs.gov/nwis/iv/?format=json&indent=on&sites=07055680,07055646,07055780,07055660&period=P7D&parameterCd=00065&siteStatus=all"
+    var myURL = "https://waterservices.usgs.gov/nwis/iv/?format=json&indent=on&sites=07055680,07055646,07055780,07055660&period=P7D&parameterCd=00065&siteStatus=active"
     var msgObject = await fetch(myURL);
     var msgJSONText = await msgObject.text();
     var msg = JSON.parse(msgJSONText);
@@ -52,13 +61,38 @@ $('.slider-for').slick({
             "labels": dates,
             "datasets": [{
                 "data": values,
-                fill: false
+                "label": sitename,
+                "fill": false,
+              family: "Arial"
             }]
         },
-        "options": {
+        "options":{ 
             responsive: false,
-            maintainAspectRatio: true,
-        },
+            maintainAspectRatio: false,
+            title: {
+                display: true,
+                text: sitename,
+                fontSize : 18
+            },
+
+            scales: {
+                xAxes: [{
+                    type: 'time',
+                    time: {
+                            displayFormats: {
+                            day: 'MMM D'
+                        }
+                    }
+                }],
+                
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: siteDescription        
+    }
+    }]
+        }
+        }
     });
 
     /* Site 2 */
@@ -83,13 +117,38 @@ $('.slider-for').slick({
             "labels": dates,
             "datasets": [{
                 "data": values,
-                fill: false
+                "label": sitename,
+                "fill": false,
+              family: "Arial"
             }]
         },
-        "options": {
+        "options":{ 
             responsive: false,
-            maintainAspectRatio: true,
-        },
+            maintainAspectRatio: false,
+            title: {
+                display: true,
+                text: sitename,
+                fontSize : 18
+            },
+
+            scales: {
+                xAxes: [{
+                    type: 'time',
+                    time: {
+                            displayFormats: {
+                            day: 'MMM D'
+                        }
+                    }
+                }],
+                
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: siteDescription        
+    }
+    }]
+        }
+        }
     });
 
     /* Site 3 */
@@ -114,12 +173,37 @@ $('.slider-for').slick({
             "labels": dates,
             "datasets": [{
                 "data": values,
-                fill: false
+                "label": sitename,
+                "fill": false,
+              family: "Arial"
             }]
         },
-        "options": {
+        "options":{ 
             responsive: false,
-            maintainAspectRatio: true,
+            maintainAspectRatio: false,
+            title: {
+                display: true,
+                text: sitename,
+                fontSize : 18
+            },
+
+            scales: {
+                xAxes: [{
+                    type: 'time',
+                    time: {
+                            displayFormats: {
+                            day: 'MMM D'
+                        }
+                    }
+                }],
+                
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: siteDescription        
+    }
+    }]
+        }
         }
     });
 
@@ -145,12 +229,37 @@ $('.slider-for').slick({
             "labels": dates,
             "datasets": [{
                 "data": values,
-                fill: false
+                "label": sitename,
+                "fill": false,
+              family: "Arial"
             }]
         },
-        "options": {
+        "options":{ 
             responsive: false,
-            maintainAspectRatio: true,
-        },
+            maintainAspectRatio: false,
+            title: {
+                display: true,
+                text: sitename,
+                fontSize : 18
+            },
+
+            scales: {
+                xAxes: [{
+                    type: 'time',
+                    time: {
+                            displayFormats: {
+                            day: 'MMM D'
+                        }
+                    }
+                }],
+                
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: siteDescription        
+    }
+    }]
+        }
+        }
     });
 }

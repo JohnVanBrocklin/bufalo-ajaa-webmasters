@@ -18,6 +18,9 @@
           <div class="main-nav">
             <ul class="desktop-nav-list">
               <li class="desktop-nav-item">
+                <a href="index.html" class="desktop-nav-link">Home</a>
+              </li>
+              <li class="desktop-nav-item">
                 <a href="#canoe" class="desktop-nav-link">Canoes</a>
               </li>
               <li class="desktop-nav-item">
@@ -29,8 +32,24 @@
             </ul>
           </div>
         </nav>
+        <nav class="mobile-nav">
+          <div id="myLinks" style="max-height: 40px;">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="#canoe" class="mobile-link">Canoes</a>
+            <a href="#cabin" class="mobile-link">Cabin</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+          </div>
+          <div class="hamburger">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
+            </a>
+          </div>
+        </nav>
     </header>
 
+    <div class="cabin-header">
+      <h2 class="cab-head">Cabin Information</h2>
+    </div>
     <section id="cabin">
       <div class="slideshow-wrap">
         <div class="slider-for">
@@ -85,11 +104,17 @@
     </section>
 
     <section id="cabin-reserve">
-      <div id="wufoo-mxod9s1vrtfsh"> Fill out my <a href="https://alexg342.wufoo.com/forms/mxod9s1vrtfsh">online form</a>. </div> <script type="text/javascript"> var mxod9s1vrtfsh; (function(d, t) { var s = d.createElement(t), options = { 'userName':'alexg342', 'formHash':'mxod9s1vrtfsh', 'autoResize':true, 'height':'753', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { mxod9s1vrtfsh = new WufooForm(); mxod9s1vrtfsh.initialize(options); mxod9s1vrtfsh.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+      <div id="wufoo-mxod9s1vrtfsh"> Fill out my <span><a href="https://alexg342.wufoo.com/forms/mxod9s1vrtfsh">online form</a></span>. </div> <script type="text/javascript"> var mxod9s1vrtfsh; (function(d, t) { var s = d.createElement(t), options = { 'userName':'alexg342', 'formHash':'mxod9s1vrtfsh', 'autoResize':true, 'height':'753', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { mxod9s1vrtfsh = new WufooForm(); mxod9s1vrtfsh.initialize(options); mxod9s1vrtfsh.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
     </section>
 
+    <br>
+    <hr>
+
+    <div class="canoe-header">
+      <h2 class="can-head">Canoe Information</h2>
+    </div>
     <section id="canoe">
-      
+      <p class="canoe-tag">Our outfitter uses <a href="https://buffalocanoemanufacturing.com/" class="ext-link"> Buffalo Canoes</a>, and are manufactured here in Newton County Arkansas.</p>
     </section>
 
     <section id="canoe-reserve">
@@ -117,7 +142,7 @@
       </aside>
     </section>
     
-    
+    <script src="https://kit.fontawesome.com/202dbdc2e3.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
     <script src="assets/js/scripts.js"></script>
