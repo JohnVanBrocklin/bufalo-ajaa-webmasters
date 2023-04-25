@@ -35,7 +35,6 @@ header.primary-1 {
   align-items: center;
   width: 100%;
   padding: 10px;
-  max-width: 1500px;
 }
 
 .desktop-nav-it {
@@ -49,14 +48,14 @@ header.primary-1 {
   text-decoration: none;
   padding: 20px;
   font-size: 20px;
-  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+  text-shadow: 2px 2px #000000;
   transition: all 0.3s ease-in-out;
   padding-top: 20px;
 
 }
 
 .desktop-nav-li:hover {
-  text-shadow: 2px 2px #000000;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
   transition: all 0.3s ease-in-out;
 }
 
@@ -106,7 +105,7 @@ header.primary-1 {
 
 .content-wrap {
     display: flex;
-    gap: 40px;
+    gap: 150px;
     text-align: center;
     background-color: #6AAED9;
     padding: 20px;
@@ -126,7 +125,7 @@ header.primary-1 {
 }
 
 .heading-cont-2 ul li{
-    list-style-position: inside;
+    text-align: left;
 }
 
 #cabin-reserve,
@@ -323,6 +322,8 @@ font-size: 20px;
   font-size: 20px;
   padding-top: 20px;
   padding-bottom: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
   line-height: 40px;
 }
 
@@ -372,6 +373,10 @@ font-size: 20px;
   #cabin-reserve,
   #canoe-reserve {
   margin: 0 30px;
+}
+
+.heading-cont-2 ul li{
+  text-align: center;
 }
 }   
 
